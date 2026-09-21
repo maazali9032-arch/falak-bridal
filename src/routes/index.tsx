@@ -3,7 +3,7 @@ import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } fr
 import { ArrowDown, ArrowUpRight, Menu, Phone, X } from "lucide-react";
 import { useEffect, useRef, useState, type MouseEvent, type ReactNode } from "react";
 
-import storefront from "@/assets/falak-storefront.png.asset.json";
+import storefront from "@/assets/falak-storefront.png";
 import bridal from "@/assets/bridal-crimson.jpg";
 import saree from "@/assets/saree-champagne.jpg";
 import reception from "@/assets/reception-wine.jpg";
@@ -257,7 +257,7 @@ function Hero() {
   return (
     <section id="top" ref={ref} className="hero-section">
       <motion.img
-        src={storefront.url}
+        src={storefront}
         alt="Falak The Bridal Boutique storefront in Charminar, Hyderabad"
         className="hero-image"
         style={{ y: imageY }}
@@ -496,7 +496,7 @@ function Boutique() {
     <section id="boutique" className="boutique-section">
       <div className="boutique-image-wrap">
         <motion.img
-          src={storefront.url}
+          src={storefront}
           alt="The illuminated Falak boutique storefront on Patthargatti Main Road"
           loading="lazy"
           width={1024}
